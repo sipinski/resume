@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpap,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.79]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Richard} % Your first name
+\familyname{Sipinski} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{40 Gordon Edward Cr.}{Winnipeg, Manitoba R2E 0H2 Canada}
+\mobile{ +1 (204) 990 6380} 
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{richard@sipinski.ca}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/me.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{More than 10 years of experience in the Information Technology field including extensive Linux/Solaris systems administration, application monitoring and maintenance, automation, and network operations experience.}
+
+\quote{An experienced and professional senior technology specialist with more than 10 years of experience in the Information Technology field, including extensive Linux/Solaris systems administration, application monitoring and maintenance, automation, and network operations.}
+\usepackage{etoolbox}
+\patchcmd{\recomputecvlengths}{%
+  \setlength{\quotewidth}{0.65\textwidth}%
+}{%
+  \setlength{\quotewidth}{0.72\textwidth}%
+}{}{}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% %\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \recipient{ \ }{ } % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+
+
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+% \makelettertitle % Print letter title
+% asdfsdf ad asdf asdf as
+% asdf
+% asdf asdf
+% sdaf
+% dsaf \
+% \newline\newline
+% dsaf
+% asdf
+% asf
+% asdf
+% asdf
+% sadfd
+% \newline\newline
+
+% \makeletterclosing % Print letter signature
+
+% \newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+
+\makecvtitle % Print the CV title
+
+% \section{Masters Thesis}
+
+% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{University of Manitoba}
+\cventry{2013--present}{Systems Administrator}{}{}{}{	
+System administration and operations, covering a wide range of areas in a complex, multi-platform environment (Linux and Solaris primarily, but also Windows Server).
+}
+
+\cventry{2012--2013}{Middleware Specialist}{}{}{}{
+Administered and maintained web, application, and integration technologies.
+}
+\cventry{2010--2012}{Unix/Linux Software Administrator}{}{}{}{Installed and configured academic/research/support software on Linux and Unix systems.}
+
+
+\cventry{2005--2010}{Support Analyst}{}{}{}{
+Provided computer support for University IT services to students, staff, and faculty.
+}
+\subsection{Provincial Government}
+\cventry{2006}{Summer Student - Manitoba Education}{}{}{}{
+Webmaster (converted existing websites to new government templates).
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015}{BSc Computer Science}{The University of Manitoba}{}{\textit{Canada}}{}  % Arguments not required can be left empty
+%cventry{2004-2005}{Student Abroad}{Universit\"at Trier}{Germany}{}{Studied a year of German as a second language}
+\cventry{2004--2005}{Student Abroad}{Universit\"at Trier}{Germany}{}{}
+
+%----------------------------------------------------------------------------------------
+%	Extra Curricular
+%----------------------------------------------------------------------------------------
+
+\section{Extra Curricular}
+
+\cvitem{2012}{CS Games Volunteer, Director of IT Support.}
+\cvitem{2009}{UAV Team Member, competed in the Association for Unmanned Vehicle Systems International student competition in Washington, DC.}
+
+%----------------------------------------------------------------------------------------
+% Technical Profile
+%----------------------------------------------------------------------------------------
+
+\section{Technical Profile}
+\cvlistitem{System operations and administration (Linux, Unix, Windows)}
+\cvlistitem{System Automation (Puppet, CFEngine, scripting)}
+\cvlistitem{Service Administration (email, mailing lists, calendaring, streaming media, authentication)}
+\cvlistitem{Database Administration (Mysql, PostgreSQL, Oracle, MSSQL)}
+\cvlistitem{Web/Application Servers (Tomcat, Oracle Fusion Middleware, Apache, nginx)}
+\cvlistitem{Development (C/C++, Java, C\#, Perl, python, bash, powershell) }
+\cvlistitem{Networking Fundamentals}
+
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% Accomplishments
+%----------------------------------------------------------------------------------------
+
+\section{Accomplishments}
+\cvlistitem{Deployed a Nagios monitoring system for over 300+ hosts and services}
+\cvlistitem{Key involvement in the migration from an 38,000 user unix email system to Microsoft Exchange and Office 365.  
+\begin{itemize}%
+\item Lead the client side effort in migrating 8,000 staff mailboxes to Exchange
+\item Key role in the technical disassembly of an enterprise Unix mail system
+\end{itemize}
+}
+\cvlistitem{Migration and redesign of a medium sized web platform from Solaris to Linux}
+\cvlistitem{Developed a University telephone directory application replacing the previous paper version}
+\cvlistitem{Experience administering and maintaining a 3700+ core compute cluster}
+\cvlistitem{Deployed a centralized linux virtual desktop environment for students, staff, and researchers}
+
+%----------------------------------------------------------------------------------------
+% Technology Exposure
+%----------------------------------------------------------------------------------------
+
+\section{Technology Exposure}
+\subsection{Programming}
+\cvitem{Intermediate}{C/C++, Java, Perl, C\#, Unix Shell (bash/sh), Powershell }
+\cvitem{Basic}{ Python, PHP, Objective C, LUA, PL/SQL, Ruby, ASP .NET }
+
+\subsection{Web and Application Technologies}%
+\cvitem{Webservers}{Apache, nginx, Lighttpd, Tomcat, IIS }
+\cvitem{Databases}{MySQL, PostgreSQL, MSSQL, Oracle }
+
+\subsection{Networking}%
+\cvitem{Protocols}{TCP/IP, DNS, DHCP, NFS, CIFS, PXE, SMTP, POP, IMAP, FTP, SSH, HTTP}
+\cvitem{Design}{Peripheral understanding of routing, subnetting, VLANs, SDNs}
+
+\subsection{Systems Administration}%
+\cvitem{Virtualization}{VMWare ESX, Solaris LDOMs and containers, KVM, OpenStack}
+\cvitem{Monitoring}{Nagios XI, Big Brother, Intermapper, Netdisco, SNMP}
+\cvitem{Storage}{RAID (hardware/software), SAN/NAS (Dell Compellent, NetApp, IBM, Oracle)  }
+\cvitem{Software}{.msi/.rpm package creation, software compilation, software deployment}
+\cvitem{OS}{RHEL/CentOS 5/6/7, Solaris 9/10, Windows Server}
+\cvitem{Training}{ITIL Foundations v3, some RHSA/RHSE, Windows Server 2012, OpenStack Bootcamp I/II}
+%\cvitem{Software Deployment}{}
+
+\subsection{High Performance Computing}%
+\cvitem{Compute}{Cluster familiarity (GP 3792 core/16TB RAM/Lustre DFS/Infiniband interconnects) }
+\cvitem{Software}{Torque, Ganglia, MPI, OpenMP, Hadoop}
+%----------------------------------------------------------------------------------------
+%	Personal Characteristics
+%----------------------------------------------------------------------------------------
+
+\section{Personal Characteristics} 
+\cvlistitem{Excellent written and verbal communication skills.}
+\cvlistitem{Exceptionally organized. Well developed ability to prioritize, delegate, multitask, and work under pressure.}
+\cvlistitem{Strong analytical and problem-solving skills.}
+\cvlistitem{Highly self-motivated, self-directed, and results-oriented.}
+\cvlistitem{Attention to detail, careful, considerate, enthusiastic, cooperative and pragmatic.}
+\cvlistitem{Languages: English (native), French (Basic: french immersion from K-12), German (Basic)}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Languages}
+
+% \cvitemwithcomment{English}{Mothertongue}{}
+% \cvitemwithcomment{German}{Basic}{}
+% \cvitemwithcomment{French}{Basic}{Attended French Immersion Schools from K-12}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+\cvitem{Tech}{Linux, Open Source, electronics, all aspects of technology.}
+\cvitem{Miscellaneous}{Golfing, bowling, downhill skiing, boating, and travelling.}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{References}
+\cvitem{}{Available on request}
+
+%----------------------------------------------------------------------------------------
+\end{document}
